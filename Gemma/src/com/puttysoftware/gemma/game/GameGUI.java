@@ -179,7 +179,7 @@ class GameGUI {
         if (PreferencesManager
                 .getMusicEnabled(PreferencesManager.MUSIC_EXPLORING)) {
             MusicManager.stopMusic();
-            MusicManager.playMusic(MusicConstants.MUSIC_EXPLORING, level / 4);
+            MusicManager.playMusic(MusicConstants.MUSIC_EXPLORING, level);
         }
         this.outputFrame.setVisible(true);
         this.outputFrame.setJMenuBar(app.getMenuManager().getMainMenuBar());

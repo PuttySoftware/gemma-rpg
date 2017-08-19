@@ -73,5 +73,5 @@ public class StatConstants {
     // Caps
     static final int HIT_MAX = 10000;
     static final int EVADE_MAX = 2000;
-    public static final int LEVEL_MAX = 100;
+    public static final int LEVEL_MAX = 25;
 }
