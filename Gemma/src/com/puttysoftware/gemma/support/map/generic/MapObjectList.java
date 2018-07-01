@@ -287,13 +287,7 @@ public class MapObjectList {
         if (instance == null) {
             return null;
         } else {
-            try {
-                return instance.getClass().newInstance();
-            } catch (final IllegalAccessException iae) {
-                return null;
-            } catch (final InstantiationException ie) {
-                return null;
-            }
+            return instance.clone();
         }
     }
 
@@ -306,18 +300,12 @@ public class MapObjectList {
             UID = reader.readString();
         }
         for (int x = 0; x < objs.length; x++) {
-            try {
-                MapObject instance = objs[x].getClass().newInstance();
-                if (formatVersion == FormatConstants.SCENARIO_FORMAT_1) {
-                    o = instance.readMapObject(reader, UID, formatVersion);
-                }
-                if (o != null) {
-                    return o;
-                }
-            } catch (InstantiationException ex) {
-                // Ignore
-            } catch (IllegalAccessException ex) {
-                // Ignore
+            MapObject instance = objs[x].clone();
+            if (formatVersion == FormatConstants.SCENARIO_FORMAT_1) {
+                o = instance.readMapObject(reader, UID, formatVersion);
+            }
+            if (o != null) {
+                return o;
             }
         }
         // Failed, object not found

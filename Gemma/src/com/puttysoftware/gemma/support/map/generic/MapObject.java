@@ -57,12 +57,12 @@ public abstract class MapObject extends CloneableObject
     @Override
     public MapObject clone() {
         try {
-            MapObject copy = this.getClass().newInstance();
+            MapObject copy = (MapObject) super.clone();
             copy.solid = this.solid;
             copy.type = (BitSet) this.type.clone();
             copy.blocksLOS = this.blocksLOS;
             return copy;
-        } catch (InstantiationException | IllegalAccessException e) {
+        } catch (CloneNotSupportedException e) {
             Support.getErrorLogger().logError(e);
             return null;
         }
