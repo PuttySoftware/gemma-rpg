@@ -7,8 +7,7 @@
 package com.puttysoftware.gemma.support.datamanagers;
 
 import java.util.ArrayList;
-
-import com.puttysoftware.xio.ResourceStreamReader;
+import com.puttysoftware.fileutils.ResourceStreamReader;
 
 public class MonsterDataManager {
     public static String[] getMonsterData() {

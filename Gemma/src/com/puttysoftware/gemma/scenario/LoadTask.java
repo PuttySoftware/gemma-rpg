@@ -13,6 +13,7 @@ import javax.swing.JFrame;
 import javax.swing.JProgressBar;
 import javax.swing.WindowConstants;
 
+import com.puttysoftware.fileutils.ZipUtilities;
 import com.puttysoftware.commondialogs.CommonDialogs;
 import com.puttysoftware.gemma.Application;
 import com.puttysoftware.gemma.Gemma;
@@ -20,7 +21,6 @@ import com.puttysoftware.gemma.resourcemanagers.LogoManager;
 import com.puttysoftware.gemma.support.Support;
 import com.puttysoftware.gemma.support.map.InvalidMapException;
 import com.puttysoftware.gemma.support.map.Map;
-import com.puttysoftware.xio.ZipUtilities;
 
 class LoadTask extends Thread {
     // Fields

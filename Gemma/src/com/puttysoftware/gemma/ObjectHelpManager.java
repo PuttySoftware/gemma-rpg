@@ -19,7 +19,6 @@ import com.puttysoftware.gemma.support.map.generic.MapObjectList;
 import com.puttysoftware.gemma.support.resourcemodifiers.ImageTransformer;
 import com.puttysoftware.help.GraphicalHelpViewer;
 import com.puttysoftware.images.BufferedImageIcon;
-import com.puttysoftware.platform.Platform;
 
 class ObjectHelpManager {
     // Fields
@@ -56,7 +55,6 @@ class ObjectHelpManager {
             JButton export = new JButton("Export");
             export.addActionListener(buttonHandler);
             this.helpFrame = new JFrame(title);
-            Platform.hookFrameIcon(this.helpFrame, Application.getIconLogo());
             this.helpFrame
                     .setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);
             this.helpFrame.setLayout(new BorderLayout());

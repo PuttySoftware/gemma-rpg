@@ -6,9 +6,9 @@
  */
 package com.puttysoftware.gemma.support.datamanagers;
 
+import com.puttysoftware.fileutils.ResourceStreamReader;
 import com.puttysoftware.gemma.support.creatures.personalities.PersonalityConstants;
 import com.puttysoftware.gemma.support.scenario.Extension;
-import com.puttysoftware.xio.ResourceStreamReader;
 
 public class PersonalityDataManager {
     public static double[] getPersonalityData(final int p) {

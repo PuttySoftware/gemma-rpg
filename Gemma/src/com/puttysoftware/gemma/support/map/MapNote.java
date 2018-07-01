@@ -30,7 +30,7 @@ public class MapNote extends CloneableObject {
     }
 
     @Override
-    public Object clone() {
+    public CloneableObject clone() {
         MapNote copy = new MapNote();
         copy.contents = this.contents;
         return copy;

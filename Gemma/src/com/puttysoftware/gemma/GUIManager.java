@@ -19,13 +19,12 @@ import javax.swing.SwingConstants;
 import javax.swing.WindowConstants;
 import javax.swing.border.EmptyBorder;
 
+import com.puttysoftware.fileutils.DirectoryUtilities;
 import com.puttysoftware.gemma.prefs.PreferencesManager;
 import com.puttysoftware.gemma.resourcemanagers.LogoManager;
 import com.puttysoftware.gemma.scenario.ScenarioManager;
 import com.puttysoftware.gemma.support.Support;
 import com.puttysoftware.images.BufferedImageIcon;
-import com.puttysoftware.platform.Platform;
-import com.puttysoftware.xio.DirectoryUtilities;
 
 public class GUIManager {
     // Fields
@@ -49,7 +48,6 @@ public class GUIManager {
         guiPane.add(this.logoLabel);
         this.guiFrame.setResizable(false);
         this.guiFrame.addWindowListener(cHandler);
-        Platform.hookFrameIcon(this.guiFrame, Application.getIconLogo());
     }
 
     // Methods

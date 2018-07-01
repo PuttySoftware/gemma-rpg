@@ -6,9 +6,9 @@
  */
 package com.puttysoftware.gemma.support.datamanagers;
 
+import com.puttysoftware.fileutils.ResourceStreamReader;
 import com.puttysoftware.gemma.support.creatures.faiths.FaithConstants;
 import com.puttysoftware.gemma.support.scenario.Extension;
-import com.puttysoftware.xio.ResourceStreamReader;
 
 public class FaithDataManager {
     public static double[] getFaithData(final int f) {

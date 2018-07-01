@@ -8,15 +8,15 @@ package com.puttysoftware.gemma.support.resourcemanagers;
 import java.nio.BufferUnderflowException;
 
 import com.puttysoftware.gemma.support.Support;
-import com.puttysoftware.oggplayer.OggPlayer;
+import com.puttysoftware.audio.ogg.OggFactory;
 
 public class MusicManager {
     private static final String INTERNAL_LOAD_PATH = "/com/puttysoftware/gemma/support/resources/music/";
     private final static Class<?> LOAD_CLASS = MusicManager.class;
-    private static OggPlayer CURRENT_MUSIC;
+    private static OggFactory CURRENT_MUSIC;
 
-    private static OggPlayer getMusic(final String filename) {
-        return new OggPlayer(MusicManager.LOAD_CLASS
+    private static OggFactory getMusic(final String filename) {
+        return OggFactory.loadResource(MusicManager.LOAD_CLASS
                 .getResource(MusicManager.INTERNAL_LOAD_PATH + filename));
     }
 
@@ -25,7 +25,7 @@ public class MusicManager {
                 .getMusic(MusicConstants.getMusicNameForID(musicID, offset));
         if (MusicManager.CURRENT_MUSIC != null) {
             // Play the music
-            MusicManager.CURRENT_MUSIC.playLoop();
+            MusicManager.CURRENT_MUSIC.start();
         }
     }
 

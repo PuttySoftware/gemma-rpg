@@ -17,7 +17,6 @@ import javax.swing.JOptionPane;
 import javax.swing.WindowConstants;
 
 import com.puttysoftware.commondialogs.CommonDialogs;
-import com.puttysoftware.gemma.Application;
 import com.puttysoftware.gemma.DrawGrid;
 import com.puttysoftware.gemma.Gemma;
 import com.puttysoftware.gemma.prefs.PreferencesManager;
@@ -29,7 +28,6 @@ import com.puttysoftware.gemma.support.resourcemanagers.MusicConstants;
 import com.puttysoftware.gemma.support.resourcemanagers.MusicManager;
 import com.puttysoftware.gemma.support.resourcemodifiers.ImageTransformer;
 import com.puttysoftware.images.BufferedImageIcon;
-import com.puttysoftware.platform.Platform;
 
 class BattleGUI {
     // Fields
@@ -174,7 +172,6 @@ class BattleGUI {
         }
         this.battlePane = new BattleDraw();
         this.battleFrame.setContentPane(borderPane);
-        Platform.hookFrameIcon(this.battleFrame, Application.getIconLogo());
         this.battleFrame
                 .setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
         this.battlePane.setLayout(new GridLayout(

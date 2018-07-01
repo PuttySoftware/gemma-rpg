@@ -6,9 +6,9 @@
  */
 package com.puttysoftware.gemma.support.descriptionmanagers;
 
+import com.puttysoftware.fileutils.ResourceStreamReader;
 import com.puttysoftware.gemma.support.creatures.faiths.FaithConstants;
 import com.puttysoftware.gemma.support.scenario.Extension;
-import com.puttysoftware.xio.ResourceStreamReader;
 
 public class FaithDescriptionManager {
     public static String getFaithDescription(final int f) {

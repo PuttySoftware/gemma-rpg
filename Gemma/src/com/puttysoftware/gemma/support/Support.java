@@ -9,10 +9,10 @@ import java.io.File;
 
 import com.puttysoftware.commondialogs.CommonDialogs;
 import com.puttysoftware.errorlogger.ErrorLogger;
+import com.puttysoftware.fileutils.DirectoryUtilities;
 import com.puttysoftware.gemma.support.creatures.Creature;
 import com.puttysoftware.gemma.support.scenario.Scenario;
 import com.puttysoftware.updater.ProductData;
-import com.puttysoftware.xio.DirectoryUtilities;
 
 public class Support {
     // Constants
@@ -30,7 +30,7 @@ public class Support {
     private static final int VERSION_MAJOR = 2;
     private static final int VERSION_MINOR = 0;
     private static final int VERSION_BUGFIX = 0;
-    private static final int VERSION_CODE = ProductData.CODE_STABLE_RELEASE;
+    private static final int VERSION_CODE = ProductData.CODE_STABLE;
     private static final int VERSION_PRERELEASE = 0;
     private static Scenario scen = null;
     private static final int BATTLE_MAP_SIZE = 16;
@@ -131,6 +131,6 @@ public class Support {
 
     private static boolean isBetaModeEnabled() {
         int code = Support.VERSION_CODE;
-        return code != ProductData.CODE_STABLE_RELEASE;
+        return code != ProductData.CODE_STABLE;
     }
 }

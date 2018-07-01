@@ -34,7 +34,6 @@ import com.puttysoftware.gemma.support.resourcemanagers.ImageManager;
 import com.puttysoftware.gemma.support.resourcemanagers.MusicConstants;
 import com.puttysoftware.gemma.support.resourcemanagers.MusicManager;
 import com.puttysoftware.gemma.support.resourcemodifiers.ImageTransformer;
-import com.puttysoftware.platform.Platform;
 
 class GameGUI {
     // Fields
@@ -208,7 +207,6 @@ class GameGUI {
         } else {
             this.outputFrame = new JFrame("Dungeon");
         }
-        Platform.hookFrameIcon(this.outputFrame, Application.getIconLogo());
         this.outputPane = new DungeonDraw();
         this.outputFrame.setContentPane(this.borderPane);
         this.outputFrame

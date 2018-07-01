@@ -11,6 +11,7 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 import com.puttysoftware.commondialogs.CommonDialogs;
+import com.puttysoftware.fileutils.FilenameChecker;
 import com.puttysoftware.gemma.Application;
 import com.puttysoftware.gemma.Gemma;
 import com.puttysoftware.gemma.scenario.names.NamesFileManager;
@@ -18,7 +19,6 @@ import com.puttysoftware.gemma.support.Support;
 import com.puttysoftware.gemma.support.map.Map;
 import com.puttysoftware.gemma.support.scenario.Extension;
 import com.puttysoftware.gemma.support.scenario.SaveRegistration;
-import com.puttysoftware.xio.FilenameChecker;
 
 public class ScenarioManager {
     // Fields

@@ -30,7 +30,6 @@ import com.puttysoftware.gemma.Application;
 import com.puttysoftware.gemma.Gemma;
 import com.puttysoftware.gemma.support.Support;
 import com.puttysoftware.gemma.support.prefs.LocalPreferencesManager;
-import com.puttysoftware.platform.Platform;
 
 class PreferencesGUIManager {
     // Fields
@@ -196,7 +195,6 @@ class PreferencesGUIManager {
         this.music[PreferencesManager.MUSIC_ALL].addItemListener(handler);
         prefsOK.addActionListener(handler);
         prefsCancel.addActionListener(handler);
-        Platform.hookFrameIcon(this.prefFrame, Application.getIconLogo());
         this.prefFrame.pack();
     }
 

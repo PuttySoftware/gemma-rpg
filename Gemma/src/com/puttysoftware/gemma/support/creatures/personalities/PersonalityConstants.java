@@ -8,8 +8,8 @@ package com.puttysoftware.gemma.support.creatures.personalities;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import com.puttysoftware.fileutils.ResourceStreamReader;
 import com.puttysoftware.gemma.support.datamanagers.PersonalityDataManager;
-import com.puttysoftware.xio.ResourceStreamReader;
 
 public class PersonalityConstants {
     // Fields

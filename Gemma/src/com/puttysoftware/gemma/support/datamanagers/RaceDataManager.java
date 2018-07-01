@@ -6,9 +6,9 @@
  */
 package com.puttysoftware.gemma.support.datamanagers;
 
+import com.puttysoftware.fileutils.ResourceStreamReader;
 import com.puttysoftware.gemma.support.creatures.races.RaceConstants;
 import com.puttysoftware.gemma.support.scenario.Extension;
-import com.puttysoftware.xio.ResourceStreamReader;
 
 public class RaceDataManager {
     public static int[] getRaceData(final int r) {

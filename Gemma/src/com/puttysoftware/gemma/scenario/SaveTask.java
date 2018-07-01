@@ -9,11 +9,11 @@ import java.io.File;
 import java.io.FileNotFoundException;
 
 import com.puttysoftware.commondialogs.CommonDialogs;
+import com.puttysoftware.fileutils.ZipUtilities;
 import com.puttysoftware.gemma.Application;
 import com.puttysoftware.gemma.Gemma;
 import com.puttysoftware.gemma.support.Support;
 import com.puttysoftware.gemma.support.scenario.Extension;
-import com.puttysoftware.xio.ZipUtilities;
 
 class SaveTask extends Thread {
     // Fields
