@@ -512,9 +512,6 @@ public class MenuManager {
                 case "Gemma Help":
                     app.getHelpManager().showHelp();
                     break;
-                case "Manual":
-                    app.getManualManager().showHelp();
-                    break;
                 default:
                     break;
                 }

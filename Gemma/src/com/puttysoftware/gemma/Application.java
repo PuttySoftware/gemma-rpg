@@ -36,7 +36,6 @@ public class Application {
     private ScenarioManager scenarioMgr;
     private MenuManager menuMgr;
     private ObjectHelpManager helpMgr;
-    private ManualManager manual;
     private GUIManager guiMgr;
     private final MapObjectList objects;
     private Shop weapons, armor, healer, regenerator, items, enhancements,
@@ -73,7 +72,6 @@ public class Application {
         this.guiMgr = new GUIManager();
         this.menuMgr = new MenuManager();
         this.helpMgr = new ObjectHelpManager();
-        this.manual = new ManualManager();
         this.battle = new BattleLogic();
         this.weapons = new Shop(ShopTypes.SHOP_TYPE_WEAPONS);
         this.armor = new Shop(ShopTypes.SHOP_TYPE_ARMOR);
@@ -167,10 +165,6 @@ public class Application {
 
     ObjectHelpManager getHelpManager() {
         return this.helpMgr;
-    }
-    
-    ManualManager getManualManager() {
-        return this.manual;
     }
 
     AboutDialog getAboutDialog() {
